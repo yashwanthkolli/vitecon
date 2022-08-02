@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 
 const variants = {
     open: {
@@ -25,7 +26,7 @@ export const MenuItem = ({ i }) => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
         >
-        <div className="text-placeholder">{i.name}</div>
+        <Link to={i.url} className="text-placeholder">{i.name}</Link>
         </motion.li>
     );
 };

@@ -28,46 +28,46 @@ const itemIds = [
     {
         id: 1,
         name: 'Committee',
-        url: '/'
+        url: '/committee'
     },
     {
         id: 2,
         name: 'Call For Paper',
-        url: '/'
+        url: '/callforpapers'
     },
     {
         id: 3,
         name: 'Keynote',
-        url: '/'
+        url: '/keynote'
     },
     {
         id: 4,
         name: 'Submission',
-        url: '/'
+        url: '/submission'
     },
     {
         id: 5,
         name: 'Publication',
-        url: '/'
+        url: '/publication'
     },
     {
         id: 6,
         name: 'Registration',
-        url: '/'
+        url: '/registration'
     },
     {
         id: 7,
         name: 'Venue',
-        url: '/'
+        url: '/venue'
     },
     {
         id: 8,
         name: 'Contact',
-        url: '/'
+        url: '/contact'
     },
     {
         id: 9,
         name: 'ICCES 2023',
-        url: '/'
+        url: '/icces'
     }
 ];
