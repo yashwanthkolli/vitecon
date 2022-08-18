@@ -5,8 +5,24 @@ import viteconLogo from '../../Assets/images/vitecon-logo1.png'
 import ieeeLogo from '../../Assets/images/ieee-logo.png'
 import vitImg from '../../Assets/images/vit-clg.jpg'
 import { IoCalendarNumberSharp, IoLocationSharp } from 'react-icons/io5'
+import Countdown from "react-countdown";
+import MapSection from '../MapSection/MapSection'
 
 const HomePage = () => {
+    const renderer = ( props ) => {
+        return(
+            <div className='timer-container'>
+                <span className='time'>{props.formatted.days}</span>
+                <span className='seperator'>:</span>
+                <span className='time'>{props.formatted.hours}</span>
+                <span className='seperator'>:</span>
+                <span className='time'>{props.formatted.minutes}</span>
+                <span className='seperator'>:</span>
+                <span className='time'>{props.formatted.seconds}</span>
+            </div>
+        )
+    }
+
     return (
         <div className='homepage'>
             <section className='landing-section'>
@@ -69,6 +85,11 @@ const HomePage = () => {
                 </div>
             </section>
 
+            <section className='countdown-section'>
+                <h1 className='heading-secondary'>MEET US ON MAY 23, 2019</h1>
+                <Countdown date='2023-02-01T01:02:03' renderer={renderer} zeroPadTime={2} />
+            </section>
+
             <section className='about-us-section'>
                 <div className='content scope'>
                     <h1 className='heading-secondary'>Scope</h1>
@@ -112,6 +133,8 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
+
+            <MapSection />
         </div>
     )
 }
