@@ -34,9 +34,9 @@ const NavBar = () => {
       <div className='nav-container'>
         <div className='nav-links'>
           <Link className='nav-option' to='/'>Home</Link>
-          <Link className='nav-option' to='/'>Committee</Link>
-          <Link className='nav-option' to='/'>Call For Paper</Link>
-          <Link className='nav-option' to='/'>Keynote</Link>
+          <Link className='nav-option' to='/committee'>Committee</Link>
+          <Link className='nav-option' to='/call-for-paper'>Call For Paper</Link>
+          <Link className='nav-option' to='/keynote'>Keynote</Link>
           <Link className='nav-option' to='/'>Submission</Link>
           <Link className='nav-option' to='/'>Publication</Link>
           <Link className='nav-option' to='/'>Registration</Link>
