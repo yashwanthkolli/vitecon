@@ -6,6 +6,7 @@ import './NavBar.Styles.scss'
 const NavBar = () => {
   const location = useLocation()
   const [open, setOpen] = useState(false)
+  console.log(location)
 
   useEffect(() => {
     setOpen(false)
@@ -37,11 +38,10 @@ const NavBar = () => {
           <Link className='nav-option' to='/committee'>Committee</Link>
           <Link className='nav-option' to='/call-for-paper'>Call For Paper</Link>
           <Link className='nav-option' to='/keynote'>Keynote</Link>
-          <Link className='nav-option' to='/'>Submission</Link>
-          <Link className='nav-option' to='/'>Publication</Link>
-          <Link className='nav-option' to='/'>Registration</Link>
+          <Link className='nav-option' to='/publication'>Publication</Link>
+          <Link className='nav-option' to='/registration'>Registration</Link>
           <Link className='nav-option' to='/#map-section'>Venue</Link>
-          <Link className='nav-option' to='/#contact-us-section'>Contact Us</Link>
+          <Link className='nav-option' to={location.pathname === "/" ? '/#contact-us-section' : location.pathname + '/#contact-us-section'}>Contact Us</Link>
         </div>
 
         <div className={open ? 'menu-icon closed' : 'menu-icon'} onClick={handleClick}>

@@ -6,6 +6,7 @@ import ContactUsSection from './Components/ContactUsSection copy/ContactUsSectio
 import CallForPaper from './Components/CallForPaper/CallForPaper';
 import Committee from './Components/Committee/Committee';
 import Keynote from './Components/Keynote/Keynote';
+import Publication from './Components/Publication/Publication';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/call-for-paper' exact element={<CallForPaper />} />
         <Route path='/committee' exact element={<Committee />} />
         <Route path='/keynote' exact element={<Keynote />} />
+        <Route path='/publication' exact element={<Publication />} />
       </Routes>
       <ContactUsSection />
     </div>

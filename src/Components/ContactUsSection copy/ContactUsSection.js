@@ -50,7 +50,7 @@ const ContactUsSection = () => {
         </div>
       </div>
       <div className='footer'>
-        Made to Perfection by <span><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/yashwanth-kolli-b8b413208/'>Yashwanth Kolli</a></span>
+        Made to Perfection by <span><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/yashwanth-kolli-b8b413208/'>Yashwanth Kolli</a></span> and <span><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/yashwanth-kolli-b8b413208/'>Aneesh S</a></span>
       </div>
     </section>
   )
