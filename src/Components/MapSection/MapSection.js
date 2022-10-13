@@ -24,19 +24,19 @@ class MapSection extends React.Component {
                 <div  data-aos="fade-up" data-aos-duration="1000">
                     <h1 className='heading-secondary'>Venue</h1>
                     <p className='text'>
-                        Anna Auditorium, <br />
+                        Technology Tower, <br />
                         VIT, Vellore- 632014
                     </p>
                 </div>
                     <div className='map-container' id='mapid' data-aos="fade-up" data-aos-duration="1000">
-                    <MapContainer center={[12.969831, 79.155696]} zoom={17} scrollWheelZoom={false}>
+                    <MapContainer center={[12.9707838, 79.1595]} zoom={17} scrollWheelZoom={false}>
                         <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
-                            <Marker position={[12.969831, 79.155696]}>
+                            <Marker position={[12.9707838, 79.1595]}>
                                 <Popup>
-                                    Open in <a href='https://goo.gl/maps/nmKPznJYbMZ6hcoM8' target='_blanck'>Google Maps</a>
+                                    Open in <a href='https://goo.gl/maps/uHeghJHkexEN4zR4A' target='_blanck'>Google Maps</a>
                                 </Popup>
                             </Marker>
                     </MapContainer>

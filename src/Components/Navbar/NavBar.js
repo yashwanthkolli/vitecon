@@ -37,7 +37,6 @@ const NavBar = () => {
           <Link className='nav-option' to='/'>Home</Link>
           <Link className='nav-option' to='/committee'>Committee</Link>
           <Link className='nav-option' to='/call-for-paper'>Call For Paper</Link>
-          <Link className='nav-option' to='/keynote'>Keynote</Link>
           <Link className='nav-option' to='/publication'>Publication</Link>
           <Link className='nav-option' to='/registration'>Registration</Link>
           <Link className='nav-option' to='/#map-section'>Venue</Link>

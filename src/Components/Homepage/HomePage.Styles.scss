@@ -19,6 +19,7 @@
         color: #1C3879;
 
         .content{
+            margin-top: 70px;
             width: 90%;
 
             .heading-logo-container{
@@ -32,11 +33,21 @@
                 }
             }
 
+            .heading-primary{
+                .small{
+                    font-size: 24px;
+                }
+                .orange{
+                    -webkit-text-stroke-width: 3px;
+                    -webkit-text-stroke-color: #f1955f;
+                }
+            }
+
             .details{
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                font-size: 28px;
+                font-size: 20px;
                 font-weight: 400;
                 margin: 30px auto;
                 width: 70%;
@@ -44,6 +55,11 @@
                 .detail{
                     display: flex;
                     align-items: center;
+
+                    a{
+                        color: #1C3879;
+                        cursor: pointer;
+                    }
 
                     svg{
                         margin-right: 10px;
@@ -61,6 +77,7 @@
                 .btn{
                     outline: none;
                     border: 1px solid #1C3879;
+                    text-align: center;
                     color: #E9E4F0;
                     background: #1C3879;
                     text-decoration: none;
@@ -86,7 +103,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin: 50px auto;
+                margin: 25px auto;
                 width: 85%;
 
                 .handler{

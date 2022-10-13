@@ -6,7 +6,6 @@
 }
 
 .heading-secondary{
-    text-transform: uppercase;
     text-align: center;
     width: 75%;
     color: #1C3879;
@@ -24,4 +23,8 @@
     line-height: 28px;
     text-align: justify;
     margin-bottom: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }

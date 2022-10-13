@@ -1,6 +1,5 @@
 import React from 'react';
 import { FiPhoneCall, FiMapPin, FiMail } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
 import './ContactUsSection.Styles.scss';
 import logo from '../../Assets/images/logo-white.png'
 
@@ -9,27 +8,27 @@ const ContactUsSection = () => {
     <section className='contact-us-section'>
       <div className='contacts' data-aos="fade-up">
           <div className='contact'>
-            <Link to='/' className='contact-icon'>
+            <a href='tel:99999999' className='contact-icon'>
               <FiPhoneCall />
-            </Link>
+            </a>
             <div className='contact-detail'>
               <span>Call Us</span>
               <span>+91 999999999</span>
             </div>
           </div>
           <div className='contact'>
-            <Link to='/' className='contact-icon'>
+            <a href="mailto:someone@example.com" className='contact-icon'>
               <FiMail />
-            </Link>
+            </a>
             <div className='contact-detail'>
               <span>Write To Us</span>
               <span>gmailIdrequired@gmail.com</span>
             </div>
           </div>
           <div className='contact'>
-            <Link to='/' className='contact-icon'>
+            <a href='https://goo.gl/maps/nmKPznJYbMZ6hcoM8' target='_blanck' rel='noreferrer' className='contact-icon'>
               <FiMapPin />
-            </Link>
+            </a>
             <div className='contact-detail'>
               <span>Vellore Institute of Technology, </span>
               <span>Vellore- 632014</span>
@@ -50,7 +49,7 @@ const ContactUsSection = () => {
         </div>
       </div>
       <div className='footer'>
-        Made to Perfection by <span><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/yashwanth-kolli-b8b413208/'>Yashwanth Kolli</a></span> and <span><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/yashwanth-kolli-b8b413208/'>Aneesh S</a></span>
+        Made to Perfection by <span><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/yashwanth-kolli-b8b413208/'>Yashwanth Kolli</a></span>
       </div>
     </section>
   )

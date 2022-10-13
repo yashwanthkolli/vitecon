@@ -31,18 +31,28 @@ const HomePage = () => {
                         <img src={viteconLogo} alt='vit-logo' />
                     </div>
                     <div className='heading-primary'>
-                        7th International Conference on <br />
-                        Communication and Electronics Systems <br />
-                        ICCES 2022
+                        <span className='small'>2th International Conference on </span><br />
+                        <span className='orange'>Vi</span>sion <span className='orange'>T</span>owards <span className='orange'>E</span>merging Trends in <br />
+                        <span className='orange'>Co</span>mmunication and <span className='orange'>N</span>etworking 
                     </div>
                     <div className='details'>
-                        <span className='detail event-date'><IoCalendarNumberSharp />23-24 May, 2023</span>
-                        <span className='detail event-date'><IoLocationSharp />Anna Auditorium, VIT</span>
+                        <span className='detail event-date'>
+                            <a rel="noreferrer" href='https://calendar.google.com/event?action=TEMPLATE&tmeid=MjI0aTZ1OGRyaXE5Nm9wMm9nMDdlM21vY24geWFzaHdhbnRoa29sbGkzMjcxQG0&tmsrc=yashwanthkolli3271%40gmail.com' target='_blanck'>
+                                <IoCalendarNumberSharp />
+                            </a>
+                            5th - 6th May, 2023
+                        </span>
+                        <span className='detail event-date'>
+                            <a href='https://goo.gl/maps/nmKPznJYbMZ6hcoM8' rel='noreferrer' target='_blanck'>
+                                <IoLocationSharp />
+                            </a>
+                            School of Electronics Engineering(SENSE), VIT, Vellore, TN, India
+                        </span>
                     </div>
                     <div className='buttons'>
                         <button className='btn'>Presentation Schedule</button>
                         <button className='btn'>Brochure</button>
-                        <button className='btn'>IEEE Website</button>
+                        <a className='btn' href='https://www.ieee.org/' target='_blank' rel='noreferrer'>IEEE Website</a>
                     </div>
                     <div className='event-handlers'>
                         <div className='handler ieee-details'>
@@ -52,13 +62,12 @@ const HomePage = () => {
                         </div>
                         <div className='other-details'>
                             <div className='ids'>
-                                XPLORE COMPLIANT ISBN: 978-1-6654-9634-6<br />
-                                DVD ISBN: 978-1-6654-9633-9
+                                
                             </div>
                             <div className='prev-ieee'>
-                                ICCES Previous Publications
-                                <div className='links'>
-                                    2021  2020  2019  2018  2017  2016
+                                ViTECoN Previous Publications
+                                <div className='links'> 
+                                    <a href='https://ieeexplore.ieee.org/xpl/conhome/8893975/proceeding' target='_blank' rel='noreferrer'>2019</a>
                                 </div>
                             </div>
                         </div>
@@ -71,65 +80,94 @@ const HomePage = () => {
                 </div>
                 <div className='dates-part'>
                     <div className='date-container'>
+                        <div className='date-heading'>Paper Submission Deadline</div>
+                        <div className='date'>15th March, 2023</div>
+                    </div>
+                    <div className='date-container'>
+                        <div className='date-heading'>Notification of Acceptance</div>
+                        <div className='date'>25th March, 2023</div>
+                    </div>
+                    <div className='date-container'>
+                        <div className='date-heading'>Author Registration</div>
+                        <div className='date'>8th April, 2023</div>
+                    </div>
+                    <div className='date-container'>
                         <div className='date-heading'>Conference Date</div>
-                        <div className='date'>30 April, 2023</div>
-                    </div>
-                    <div className='date-container'>
-                        <div className='date-heading'>Final Paper Submission Deadline</div>
-                        <div className='date'>30 April, 2023</div>
-                    </div>
-                    <div className='date-container'>
-                        <div className='date-heading'>Last Date of Registration</div>
-                        <div className='date'>30 April, 2023</div>
+                        <div className='date'>5th - 6th May, 2023</div>
                     </div>
                 </div>
             </section>
 
             <section className='countdown-section'>
-                <h1 className='heading-secondary'>MEET US ON MAY 23, 2019</h1>
-                <Countdown date='2023-02-01T01:02:03' renderer={renderer} zeroPadTime={2} />
+                <h1 className='heading-secondary'>MEET US ON MAY 5th, 2023</h1>
+                <Countdown date='2023-05-05T00:00:00' renderer={renderer} zeroPadTime={2} />
             </section>
 
             <section className='about-us-section'>
                 <div className='content scope'>
-                    <h1 className='heading-secondary'>Scope</h1>
-                    <div className='text'>Following the consecutive success of Communication and Electronics Systems [CES], 
-                    the conference committee is pleased to announce the 7th International Conference on Communication and 
-                    Electronics Systems [ICCES 2022] in emerging information and communication technologies [ICT] and smart 
-                    electronics. ICCES 2022 will be organized from PPG Institute of Technology Campus on June 22-24, 2022. 
-                    ICCES 2022 seeks potential research submissions that solicit the state-of-the-art applications, 
-                    innovative methods, and analyse the unexplored and unsolved challenges to establish the relative 
-                    solutions to advance the existing applications and theories of ICT & smart electronics systems. 
-                    Potential researchers and authors are invites to submit their novel, unpublished papers of significant 
-                    research quality that addresses the advances and challenges in the interdisciplinary areas both system 
-                    theories and applications.</div>
+                    <h1 className='heading-secondary'>Scope of ViTECoN</h1>
+                    <div className='text'>The International Conference on Vision Towards Emerging Trends in Communication 
+                    and Networking (VITECON-2023) is the premier forum for the presentation of new advances and research 
+                    results in the fields of Electronics and Communication Engineering. The conference will bring together 
+                    leading researchers, engineers and scientists in the domain of interest from around the world.
+                    <br />
+                    <br />
+                    The scope of the conference includes, but not limited to Electronics, Communication, Computing, signal 
+                    processing (includes video and Image Processing), and Networking, with Fuzzy System, Genetic Algorithms, 
+                    Intelligent Control, Robotics, Machine Learning, Machine Translation, Neural Networks, etc.</div>
                 </div>
                 <div className='content about'>
                     <h1 className='heading-secondary'>About VIT</h1>
                     <div className='text'>
-                        VIT was established with the aim of providing quality higher education on par with 
-                        international standards. It persistently seeks and adopts innovative methods to improve the quality of 
-                        higher education on a consistent basis.The campus has a cosmopolitan atmosphere with students from all 
-                        corners of the globe. Experienced and learned teachers are strongly encouraged to nurture the students. 
-                        The global standards set at VIT in the field of teaching and research spur us on in our relentless 
-                        pursuit of excellence. In fact, it has become a way of life for us. The highly motivated youngsters on 
-                        the campus are a constant source of pride. Our Memoranda of Understanding with various international 
-                        universities are our major strength. They provide for an exchange of students and faculty and encourage 
-                        joint research projects for the mutual benefit of these universities. Many of our students, who pursue 
-                        their research projects in foreign universities, bring high quality to their work and esteem to India 
-                        and have done us proud. With steady steps, we continue our march forward. We look forward to meeting 
-                        you here at VIT.
+                        Vellore Institute of Technology was founded in 1984 as Vellore Engineering College by Dr. G. Viswanathan, 
+                        a former Parliamentarian and Minister in the Tamil Nadu government. The Deemed to be University status 
+                        was conferred in June, 2001 by MHRD Govt. of India. Currently, VIT has eco-friendly campuses in Vellore, 
+                        Chennai, Amaravathi and Bhopal.
+                        <br />
+                        VIT attracts students from all the states and union territories of India and 60 different countries, owing 
+                        to its academic excellence.
                         <div className='img-container'>
                             <img src={vitImg} alt='vit university' />
                         </div>
-                        It was established under Section 3 of the University Grants Commission (UGC) Act, 1956, and was founded 
-                        in 1984 as a self-financing institution called the Vellore Engineering College. The Union Ministry of 
-                        Human Resources Development conferred University status on Vellore Engineering College in 2001. The 
-                        University is headed by its founder and Chancellor, Dr. G. Viswanathan, a former Parliamentarian and 
-                        Minister in the Tamil Nadu Government. In recognition of his service to India in offering world class 
-                        education, he was conferred an honorary doctorate by the West Virginia University, USA. Mr.Sankar 
-                        Viswanathan, Dr.Sekar Viswanathan and Mr.G.V. Selvam are the Vice-Presidents; Dr. Rambabu Kodali is the 
-                        Vice-Chancellor and Dr. S. Narayanan is the Pro-Vice-Chancellor.
+                        Vellore Institute of Technology (VIT) has emerged as one of the best institutes of India and is aspiring to 
+                        become a global leader. Having fully committed to its Vision - "Transforming life through excellence in education 
+                        and research", VIT focuses on Quality in teaching-learning, research and innovation, thereby making the institute 
+                        distinct from others.
+                        <br />
+                        <br />
+                        VIT is ranked 9th in University Category, 10th in Research Category, 12th in Engineering Category and 18th in 
+                        Overall Category in 2022 NIRF Ranking published by the Ministry of Education, Govt. of India. National Assessment 
+                        and Accreditation Council (NAAC) has accredited VIT with the highest grade A++ in 2021 (4th cycle). 
+                        <br />
+                        Some of the significant achievements of the institution in the last five years are:
+                        <br />
+                        •	VIT is one of the top 3 institutions of India and within the top 601-700 Universities of the world as per 
+                        Shanghai ARWU Ranking 2022
+                        <br />
+                        •	Ranked within top 200 in Asia (QS - Asia University Rankings 2022) 
+                        <br />
+                        •	Eight Subjects of VIT are ranked by QS World University Ranking by Subject 2022
+                        <br />
+                        •	Ranked No.1 in ARIIA-2019 among the private institutions.
+                        <br />
+                        •	Ranked by QS World University Ranking, Times Higher Education (THE) World University Ranking, US News Ranking, 
+                        Round University Ranking, Russia and others
+                    </div>
+                </div>
+                <div className='content about'>
+                    <h1 className='heading-secondary'>About SENSE</h1>
+                    <div className='text'>
+                    SENSE at VIT was established for imparting state-of-the-art knowledge in Electronics and Communication Engineering and 
+                    allied areas. B.Tech. Electronics and Communication Engineering is accredited by the Engineering Accreditation 
+                    Commission of <a href='http://www.abet.org' target='_blanc' rel='noreferrer'>ABET</a>. Students who are eligible are placed on campus and many of them are placed in 
+                    core companies every year. The school has set up laboratories with excellent infrastructure in the areas of Electronics, 
+                    Communication, VLSI, Embedded, Sensors and Nanotechnology. The latest simulation tools are used to cater to various 
+                    specializations and are equipped with facilities for measurement, characterization and synthesis of experimental 
+                    as well as theoretical results. Students are encouraged to take up their final year projects abroad too. The School has 
+                    many industry sponsored advanced laboratories for carrying research and development. MoUs with many Foreign Universities, 
+                    Research Organizations and Industries facilitate student and faculty exchange. Faculty are actively involved in R&D 
+                    activities and are working on research projects funded by government organisations like DRDO, ISRO (RESPOND), BRNS and 
+                    agencies like DST.
                     </div>
                 </div>
             </section>
