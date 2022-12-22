@@ -53,7 +53,7 @@
         width: 80%;
         margin-top: 70px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
 
         .company-text{
@@ -67,7 +67,7 @@
             margin-right: 50px;
 
             .logo{
-                height: 100px;
+                height: 200px;
                 -webkit-tap-highlight-color: transparent;
 
                 img {
@@ -80,7 +80,6 @@
 
             .subscribe-heading{
                 font-size: 24px;
-                text-transform: uppercase;
                 letter-spacing: 2px;
                 margin-bottom: 10px;
             }

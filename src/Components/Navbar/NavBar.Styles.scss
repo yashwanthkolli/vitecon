@@ -3,6 +3,11 @@
     z-index: 111;
 }
 
+.dropdown-item{
+    text-decoration: none;
+    color: black;
+}
+
 .navbar-white{
     position: fixed;
     background: #1C3879;
@@ -47,6 +52,7 @@
             .nav-option {
                 color: #F9F5EB;
                 text-decoration: none;
+                cursor: pointer;
 
                 &:hover,
                 :active {

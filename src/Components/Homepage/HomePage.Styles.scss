@@ -18,12 +18,22 @@
         align-items: center;
         color: #1C3879;
 
+        .college-logo{
+            width: 300px;
+            position: absolute;
+            top: 45px;
+            left: 10px;
+
+            img{
+                width: 100%;
+            }
+        }
         .content{
-            margin-top: 70px;
+            margin-top: 80px;
             width: 90%;
 
             .heading-logo-container{
-                width: 200px;
+                width: 250px;
                 margin: auto;
                 margin-bottom: 20px;
                 
@@ -35,7 +45,7 @@
 
             .heading-primary{
                 .small{
-                    font-size: 24px;
+                    font-size: 32px;
                 }
                 .orange{
                     -webkit-text-stroke-width: 3px;
@@ -43,18 +53,31 @@
                 }
             }
 
+            .orange-only{
+                // -webkit-text-stroke-width: 3px;
+                // -webkit-text-stroke-color: #f1955f;
+                font-size: 46px;
+                margin: 30px auto;
+            }
+
             .details{
+                position: absolute;
+                bottom: 10px;
+                left: 20px;
                 display: flex;
+                flex-direction: column;
                 justify-content: space-around;
-                align-items: center;
                 font-size: 20px;
                 font-weight: 400;
-                margin: 30px auto;
-                width: 70%;
+                width: 400px;
 
                 .detail{
                     display: flex;
                     align-items: center;
+
+                    &:not(last-child){
+                        margin-bottom: 20px;
+                    }
 
                     a{
                         color: #1C3879;
@@ -101,6 +124,7 @@
 
             .event-handlers{
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
                 margin: 25px auto;
@@ -117,7 +141,7 @@
 
                 .ieee-details{
                     .logo-container{
-                        width: 200px;
+                        width: 150px;
                     }
                 }
 
@@ -129,14 +153,27 @@
 
                 .other-details{
                     text-align: center;
-                    align-self: flex-end;
                     font-size: 16px;
                     display: flex;
                     flex-direction: column-reverse;
 
-                    .prev-ieee{
-                        font-size: 22px;
-                        margin-bottom: 30px;
+                    .ids{
+                        margin: 15px auto;
+                    }
+
+                    // .prev-ieee{
+                    //     font-size: 22px;
+                    //     margin-bottom: 30px;
+                    // }
+
+                    a{
+                        text-decoration: none;
+                        color: #1C3879;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: #607EAA;
+                        }
                     }
                 }
             }

@@ -26,27 +26,33 @@ const HomePage = () => {
     return (
         <div className='homepage'>
             <section className='landing-section'>
+                <div className='college-logo'>
+                    <img src={vitLogo} alt='Vit Logo' />
+                </div>
                 <div className='content'>
                     <div className='heading-logo-container'>
                         <img src={viteconLogo} alt='vit-logo' />
                     </div>
                     <div className='heading-primary'>
-                        <span className='small'>2th International Conference on </span><br />
+                        <span className='small'> IEEE 2nd International Conference on </span><br />
                         <span className='orange'>Vi</span>sion <span className='orange'>T</span>owards <span className='orange'>E</span>merging Trends in <br />
-                        <span className='orange'>Co</span>mmunication and <span className='orange'>N</span>etworking 
+                        <span className='orange'>Co</span>mmunication and <span className='orange'>N</span>etworking Technologies
+                    </div>
+                    <div className='heading-primary orange-only'>
+                        ViTECoN-2023
                     </div>
                     <div className='details'>
                         <span className='detail event-date'>
-                            <a rel="noreferrer" href='https://calendar.google.com/event?action=TEMPLATE&tmeid=MjI0aTZ1OGRyaXE5Nm9wMm9nMDdlM21vY24geWFzaHdhbnRoa29sbGkzMjcxQG0&tmsrc=yashwanthkolli3271%40gmail.com' target='_blanck'>
+                            <a rel="noreferrer" href='https://calendar.google.com/event?action=TEMPLATE&tmeid=MDUybHVzbjlpMWUxamtka21ycnI5NTM4dWUgeWFzaHdhbnRoa29sbGkzMjcxQG0&tmsrc=yashwanthkolli3271%40gmail.com' target='_blanck'>
                                 <IoCalendarNumberSharp />
                             </a>
                             5th - 6th May, 2023
                         </span>
                         <span className='detail event-date'>
-                            <a href='https://goo.gl/maps/nmKPznJYbMZ6hcoM8' rel='noreferrer' target='_blanck'>
+                            <a href='https://goo.gl/maps/uHeghJHkexEN4zR4A' rel='noreferrer' target='_blanck'>
                                 <IoLocationSharp />
                             </a>
-                            School of Electronics Engineering(SENSE), VIT, Vellore, TN, India
+                            School of Electronics Engineering (SENSE), VIT, Vellore, TN, India
                         </span>
                     </div>
                     <div className='buttons'>
@@ -61,19 +67,14 @@ const HomePage = () => {
                             </div>
                         </div>
                         <div className='other-details'>
-                            <div className='ids'>
-                                
-                            </div>
                             <div className='prev-ieee'>
                                 ViTECoN Previous Publications
                                 <div className='links'> 
                                     <a href='https://ieeexplore.ieee.org/xpl/conhome/8893975/proceeding' target='_blank' rel='noreferrer'>2019</a>
                                 </div>
                             </div>
-                        </div>
-                        <div className='handler clg-details'>
-                            <div className='logo-container'>
-                                <img src={vitLogo} alt='Vit Logo' />
+                            <div className='ids'>
+                                <a href='https://conferences.ieee.org/conferences_events/conferences/conferencedetails/58111' target='_blank' rel='noreferrer'>Approved by IEEE</a>
                             </div>
                         </div>
                     </div>
@@ -107,14 +108,14 @@ const HomePage = () => {
                 <div className='content scope'>
                     <h1 className='heading-secondary'>Scope of ViTECoN</h1>
                     <div className='text'>The International Conference on Vision Towards Emerging Trends in Communication 
-                    and Networking (VITECON-2023) is the premier forum for the presentation of new advances and research 
+                    and Networking Technologies (ViTECoN-2023) is the premier forum for the presentation of new advances and research 
                     results in the fields of Electronics and Communication Engineering. The conference will bring together 
                     leading researchers, engineers and scientists in the domain of interest from around the world.
                     <br />
                     <br />
-                    The scope of the conference includes, but not limited to Electronics, Communication, Computing, signal 
-                    processing (includes video and Image Processing), and Networking, with Fuzzy System, Genetic Algorithms, 
-                    Intelligent Control, Robotics, Machine Learning, Machine Translation, Neural Networks, etc.</div>
+                    The scope of the conference includes, but not limited to Electronics, Communication Engineering, Computing, signal 
+                    processing and Image Processing, Genetic Algorithms, Robotics, Machine Learning and Deep Learning, 
+                    Machine Translation, Neural Networks, Next generation Communication and networking, etc.</div>
                 </div>
                 <div className='content about'>
                     <h1 className='heading-secondary'>About VIT</h1>
@@ -158,8 +159,7 @@ const HomePage = () => {
                     <h1 className='heading-secondary'>About SENSE</h1>
                     <div className='text'>
                     SENSE at VIT was established for imparting state-of-the-art knowledge in Electronics and Communication Engineering and 
-                    allied areas. B.Tech. Electronics and Communication Engineering is accredited by the Engineering Accreditation 
-                    Commission of <a href='http://www.abet.org' target='_blanc' rel='noreferrer'>ABET</a>. Students who are eligible are placed on campus and many of them are placed in 
+                    allied areas. Students who are eligible are placed on campus and many of them are placed in 
                     core companies every year. The school has set up laboratories with excellent infrastructure in the areas of Electronics, 
                     Communication, VLSI, Embedded, Sensors and Nanotechnology. The latest simulation tools are used to cater to various 
                     specializations and are equipped with facilities for measurement, characterization and synthesis of experimental 
